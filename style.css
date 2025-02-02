@@ -1,0 +1,292 @@
+body {
+    font-family: 'Dancing Script', cursive;
+}
+
+#home{
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+    margin: 0;
+    background-color: #7d69b5;
+    background-image: url("https://transparenttextures.com/patterns/inspiration-geometry.png");
+    color: #E8E0FF;
+}
+
+#surprise{
+    background-image: url("https://transparenttextures.com/patterns/always-grey.png");
+}
+
+h1{
+    animation: fadeIn 2s ease-in-out;
+    font-size: 70px;
+}
+
+.sub{
+    margin-top: 10px;
+    font-size: 35px;
+    animation: slideInFromRight 3s ease-out;
+}
+
+.container-home{
+    text-align: center;
+}
+
+.container-surp{
+    display: flex;
+    margin-top: 2%;
+    margin-left: 3%;
+}
+
+.btn{
+    animation: fadeIn 2s ease-in-out;
+    animation: bounce 1s ease infinite;
+    margin-top: 20px;
+}
+
+.letter{
+    background-color: #FFF9F9;
+    width: 60%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+.title-letter{
+    margin-left: 2%;
+}
+
+.content{
+    margin: 2%;
+    font-size: 15px;
+}
+
+.division{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    margin-left: 3%;
+    width: 30px;
+}
+
+.item{
+    font-size: 30px;
+}
+
+.right{
+    margin-left: 3%;
+    width: 30%;
+}
+
+.gifs {
+    display: flex;
+    justify-content: center; 
+    margin-top: 10px; 
+    margin-bottom: 20px;
+}
+
+.img{
+    width: 30%;
+    height: auto;
+}
+
+.song iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .item{
+        font-size: 20px;
+    }
+    
+    .content{
+        margin: 2%;
+        font-size: 12px;
+    }
+
+    .song {
+        width: 100%;
+        max-width: 500px;  
+        height: 235px;
+        margin: 0 auto;  
+    }
+    
+    .space{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width:768px){
+    .song {
+        width: 100%;
+        max-width: 400px;  
+        height: 210px;
+        margin: 0 auto;  
+    }
+    .space{
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 850px) and (min-width:480px){
+    /* Aquí cambiamos la disposición de todo el contenedor principal a columna */
+    .container-surp {
+        display: flex;
+        flex-direction: column; /* Coloca todos los elementos uno debajo de otro */
+        align-items: center; /* Centra los elementos de forma vertical */
+        width: 100%; /* Asegura que se aproveche todo el ancho de la pantalla */
+    }
+
+    .letter {
+        width: 80%; /* Asegura que el ancho de .letter ocupe toda la pantalla */
+    }
+
+    .content{
+        font-size: 15px;
+    }
+
+    .division {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .item{
+        font-size: 22px;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column; /* Los elementos en .right se organizan en columna */
+        width: 100%;
+        margin-top: 20px; 
+    }
+
+    .gifs {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .img {
+        width: 30%; 
+        height: auto;
+    }
+
+    .song {
+        width: 100%;
+        max-width: 450px;  
+        height: 230px;
+        margin: 0 auto;  
+    }
+
+    .space{
+        margin-top: -40px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .container-surp {
+        display: flex;
+        flex-direction: column; /* Coloca todos los elementos uno debajo de otro */
+        align-items: center; /* Centra los elementos de forma vertical */
+        width: 100%; /* Asegura que se aproveche todo el ancho de la pantalla */
+    }
+
+    .letter {
+        width: 70%; /* Asegura que el ancho de .letter ocupe toda la pantalla */
+    }
+
+    .content{
+        font-size: 12px;
+    }
+
+    .division {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .item{
+        font-size: 16px;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column; /* Los elementos en .right se organizan en columna */
+        width: 100%;
+        margin-top: 20px; 
+    }
+
+    .gifs {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .img {
+        width: 20%; 
+        height: auto;
+    }
+
+    .song {
+        width: 100%;
+        max-width: 250px;  
+        height: 230px;
+        margin: 0 auto;  
+    }
+
+    .space{
+        margin-top: -40px;
+    }
+}
