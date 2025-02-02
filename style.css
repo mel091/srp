@@ -1,6 +1,3 @@
-body {
-    font-family: 'Dancing Script', cursive;
-}
 
 #home{
     display: flex;
@@ -11,6 +8,7 @@ body {
     background-color: #7d69b5;
     background-image: url("https://transparenttextures.com/patterns/inspiration-geometry.png");
     color: #E8E0FF;
+    font-family: 'Dancing Script', cursive;
 }
 
 #surprise{
