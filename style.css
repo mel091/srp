@@ -59,12 +59,14 @@ h3{
 }
 
 .title-letter{
+    margin-top: 3%;
     margin-left: 2%;
+    margin-bottom: 15px;
 }
 
 .content{
     margin: 2%;
-    font-size: 15px;
+    font-size: 25px;
 }
 
 .division{
@@ -159,11 +161,11 @@ h3{
     }
     
     .letter {
-        width: 60%;  /* Ajusté a un valor intermedio */
+        width: 60%;  
     }
 
     .content {
-        font-size: 14px;  /* Un poco más pequeño para pantallas medianas */
+        font-size: 18px; 
     }
 
     .right{
@@ -173,13 +175,12 @@ h3{
 
     .song {
         width: 100%;
-        /* Ajuste de tamaño para pantallas medianas */
         height: 210px;
          
     }
 
     .space {
-        margin-top: -50px;  /* Ajuste del margen */
+        margin-top: -50px;
     }
 
     .button-surp{
@@ -209,7 +210,7 @@ h3{
     }
 
     .content{
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .division {
@@ -331,6 +332,11 @@ h3{
 @media screen and (max-width:390px){
     h1{
         font-size: 30px;
+    }
+
+    .title-letter{
+        text-align: center;
+        font-size: 18px;
     }
 
     .letter {
